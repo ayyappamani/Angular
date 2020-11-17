@@ -1,0 +1,49 @@
+<div class="TopNavigation">
+    
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">JobsOnline</a>
+      </div>
+     
+      <ul class="nav navbar-nav navbar-right">
+        <li><a routerLink='/register'><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+   
+      </ul>
+    </div>
+  </nav>
+  
+    </div>
+<div class ="Login">   
+<div class="container">
+  <div id="card">
+    <div id="card-content">
+      <div id="card-title">
+        <h2>LOGIN</h2>
+        <div class="underline-title"></div>
+      </div> 
+      <form class="form" (ngSubmit)="onSubmit()">
+        <label for="user-email" style="padding-top:13px">
+            &nbsp;Email
+          </label>
+        <input id="user-email" class="form-content" type="email" name="email" autocomplete="on" [(ngModel)]=
+        "email" required />
+        <div class="form-border"></div>
+        <label for="user-password" style="padding-top:22px">&nbsp;Password
+          </label>
+        <input id="user-password" class="form-content" type="password" name="password" [(ngModel)]=
+        "password" required />
+        <div class="form-border"></div>
+        <!-- <a href="#">
+          <legend id="forgot-pass">Forgot password?</legend>
+        </a> -->
+        <input id="submit-btn" type="submit" name="submit" value="LOGIN" />
+          <br><a  routerLink="/register" >Don't have an account yet? Register</a>
+      </form>
+    </div>
+  </div>
+  
+
+</div>
+</div>
+
